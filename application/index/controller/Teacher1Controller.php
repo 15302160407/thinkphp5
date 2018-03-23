@@ -11,8 +11,12 @@ class Teacher1Controller extends controller{
 	// 					 ->select();
 	// dump($teacher1_1);
 
-	return $this->fetch('hi');
-		}
+		return $this->fetch('',['name'=>'张三','age'=>12]);
+	}
+	public function assign1(){
+		 $this->assign('name','zhangsan');
+		 return $this->fetch();
+	}
 	
 }
 ?>
