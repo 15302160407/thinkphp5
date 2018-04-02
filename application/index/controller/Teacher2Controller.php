@@ -38,7 +38,7 @@ class Teacher2Controller extends controller{
 			$this->success('ok',url('teacher2/getTeacher'));
 		}
 		else{
-			$this->error('错误');
+			$this->error('错误！');
 		}
 	}
 }
