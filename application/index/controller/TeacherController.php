@@ -1,7 +1,8 @@
 <?php
 namespace app\index\controller;
 use app\common\model\Teacher;
-class TeacherController{
+use think\Controller;
+class TeacherController extends Controller{
 	public function index()
 	{
 		//静态调用get()
@@ -62,6 +63,9 @@ class TeacherController{
 	//Teacher::get(1);
 
 
+	}
+	public function add(){
+		return $this->fetch();
 	}
 
 }
