@@ -1,12 +1,12 @@
 <?php
 namespace app\index\controller;
 use think\Controller;
-use think\Db;
+use think\Request;
 class IndexController  extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-    	return $this->fetch();
+    	dump($request);
     }
 }
 
