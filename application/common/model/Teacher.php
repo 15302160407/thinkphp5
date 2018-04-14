@@ -7,7 +7,11 @@ class Teacher extends Model{
 	$order=['sex'=>'desc','id'=>'desc'];
 	return $this->where($data)
 				->order($order)
-				->paginate(1);
+				->paginate(2);
 			}
+	public function add($date){
+		$this->save($date);
+		return $this->id;
 	}
+}
  ?>
